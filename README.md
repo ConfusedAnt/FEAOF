@@ -8,7 +8,7 @@ Inhibition of the hERG channel by drug molecules can lead to severe cardiac toxi
 
 ### FEAOF Architecture
 
-![FEAOF](./docs/Architecture.tif)
+![FEAOF](./docs/Architecture.png)
 
 Overall architecture of the proposed FEAOF. It comprises two components: Feature Extraction and Aggregation Optimization. The feature extraction module focuses on characterizing the structures of both ligands and complexes. The aggregation optimization module is dedicated to integrating the characterizations of these two structural types, optimizing to obtain a comprehensive representation of the complex for property prediction.
 
