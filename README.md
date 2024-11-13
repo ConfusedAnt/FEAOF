@@ -8,30 +8,40 @@ Inhibition of the hERG channel by drug molecules can lead to severe cardiac toxi
 
 ### FEAOF Architecture
 
-![pepharmony](./doc/main.png)
+![pepharmony](./docs/Architecture.png)
 
-Overall architecture of the proposed PepHarmony framework. The sequence encoder and structural encoder are trained together by contrastive or generative learning. The downstream prediction tasks will just use the sequence coder to extract peptide representation.
+Overall architecture of the proposed FEAOF. It comprises two components: Feature Extraction and Aggregation Optimization. The feature extraction module focuses on characterizing the structures of both ligands and complexes. The aggregation optimization module is dedicated to integrating the characterizations of these two structural types, optimizing to obtain a comprehensive representation of the complex for property prediction.
 
-### Evaluation Dataset
+### Raw and Processed Data
 ```
 ---data
-  ---eval
-    ---- aff.csv
-    ---- CPP.txt
-    ---- Sol.txt
+  ---raw
+    ---- herg_raw_0528.csv
+    ---- herg_raw_0528_clean.csv
+  ---processed
+    ---- Train_Val.csv
+    ---- Test_1.csv
+    ---- Test_2.csv
 ```
-### Pretrained Model Path
+### Interaction Fingerprint Data
 
-1. download the esm_t12 from: https://github.com/facebookresearch/esm and put it in the following path:
+1. download the Processed Data from: 。。。 and put it in the following path:
 
 ```
 ---data
-  ---pretrained
-    ---- esm2_t12/
-      ---- esm2_t12_35M_UR50D-contact-regression.pt
-      ---- esm2_t12_35M_UR50D.pt
-    ---- mc_gearnet_edge.pth
-    ---- siamdiff_gearnet_res.pth
+  ---IF_Data
+    ---- Docking_IF_1.csv
+    ---- Docking_IF_2.csv
+    ---- Docking_IF_3.csv
+
+    ---- Train_All_Features.pkl
+    ---- Val_All_Features.pkl
+    ---- Test_1_All_Features.pkl
+    ---- Test_2_All_Features.pkl
+    
+    ---- Train_Val_IF.csv
+    ---- Test_1_IF.csv
+    ---- Test_2_IF.csv
 ```
 
 ### Further Pretrained Model Path (for downstream tasks in peptideeval)
