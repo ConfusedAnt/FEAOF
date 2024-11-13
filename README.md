@@ -1,6 +1,6 @@
 # FEAOF
 
-This repository contains the code for the paper: FEAOF: A Transferable Framework Applied to Prediction of hERG-Related Cardiotoxicity. 
+This repository contains the code for the paper: [FEAOF: A Transferable Framework Applied to Prediction of hERG-Related Cardiotoxicity]. 
 
 ## Introduction
 
