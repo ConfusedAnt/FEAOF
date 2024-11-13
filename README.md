@@ -57,10 +57,10 @@ download the Data from: 。。。 and put it in the following path:
 ```
 --- trained_models
     --- DL
-        --- CNN.pkl
-        --- Transformer.pkl
-        --- GCN.pkl
-        --- MPNN.pkl
+        --- CNN-SMILES.pkl
+        --- Transformer-TOCKEN.pkl
+        --- GCN-GRAPH.pkl
+        --- MPNN-GRAPH.pkl
     --- ML
         --- GBM_2FP_11Des_1441IF.pkl
         --- RF_2FP_11Des_1441IF.pkl
