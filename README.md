@@ -8,37 +8,43 @@ Inhibition of the hERG channel by drug molecules can lead to severe cardiac toxi
 
 ### FEAOF Architecture
 
-![pepharmony](./docs/Architecture.png)
+![FEAOF](./docs/Architecture.tif)
 
 Overall architecture of the proposed FEAOF. It comprises two components: Feature Extraction and Aggregation Optimization. The feature extraction module focuses on characterizing the structures of both ligands and complexes. The aggregation optimization module is dedicated to integrating the characterizations of these two structural types, optimizing to obtain a comprehensive representation of the complex for property prediction.
 
-### Raw and Processed Data
+### Raw and Split Data
 ```
 ---data
   ---raw
+  # Wash Smiles
     ---- herg_raw_0528.csv
     ---- herg_raw_0528_clean.csv
+
   ---processed
+  # Split Datasets
     ---- Train_Val.csv
     ---- Test_1.csv
     ---- Test_2.csv
 ```
-### Interaction Fingerprint Data
+### All Features Data
 
-1. download the Processed Data from: 。。。 and put it in the following path:
+1. download the Data from: 。。。 and put it in the following path:
 
 ```
 ---data
   ---IF_Data
+    # Docking Result
     ---- Docking_IF_1.csv
     ---- Docking_IF_2.csv
     ---- Docking_IF_3.csv
 
+    # Merge All Features
     ---- Train_All_Features.pkl
     ---- Val_All_Features.pkl
     ---- Test_1_All_Features.pkl
     ---- Test_2_All_Features.pkl
-    
+
+    # Select Interaction Fingerprint
     ---- Train_Val_IF.csv
     ---- Test_1_IF.csv
     ---- Test_2_IF.csv
