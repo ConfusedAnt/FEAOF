@@ -58,7 +58,7 @@ download the Data from: 。。。 and put it in the following path:
 --- trained_models
     --- DL
         --- CNN-SMILES.pkl
-        --- Transformer-TOCKEN.pkl
+        --- Transformer-TOKENS.pkl
         --- GCN-GRAPH.pkl
         --- MPNN-GRAPH.pkl
     --- ML
