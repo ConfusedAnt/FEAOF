@@ -79,5 +79,7 @@ download the Data from: 。。。 and put it in the following path:
 ![Performance](./docs/Performance.png)
 
 ```bash
-python inference_sscp.py
+python Train_FEAOF.py
+python Train_DL.py
+Train_Eval_ML.ipynb
 ```
