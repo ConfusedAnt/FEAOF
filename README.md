@@ -74,12 +74,14 @@ download the Data from: 。。。 and put it in the following path:
         --- Protein_3FC_FEAOF.pkl
 ```
 
-### Model Performance
-
-![Performance](./docs/Performance.png)
-
+### Retrain and test models
 ```bash
 python Train_FEAOF.py
 python Train_DL.py
 Train_Eval_ML.ipynb
 ```
+
+### Model Performance
+![Performance](./docs/Performance.png)
+
+
