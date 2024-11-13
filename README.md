@@ -28,7 +28,7 @@ Overall architecture of the proposed FEAOF. It comprises two components: Feature
 ```
 ### All Features Data
 
-1. download the Data from: 。。。 and put it in the following path:
+download the Data from: 。。。 and put it in the following path:
 
 ```
 ---data
@@ -50,19 +50,33 @@ Overall architecture of the proposed FEAOF. It comprises two components: Feature
     ---- Test_2_IF.csv
 ```
 
-### Further Pretrained Model Path (for downstream tasks in peptideeval)
+### Trained Models
 
-- download the cpkts in the following link: [Google Drive](https://drive.google.com/file/d/15Ai_lOrsxQ11UlvHZcMbKvU9YMGRltYl/view?usp=drive_link)
+- download the cpkts in the following link: [Zenodo](。。。)
 - unzip the cpkts to the following path:
 ```
----data
-    ---cpkt
-        ---- af80_step_50: Multivew Gearnet + ESM; Further Pretrained on AF90
-        ---- af890_step_50: Multivew Gearnet + ESM; Further Pretrained on AF80
-        ---- pdb_step_50: Multivew Gearnet + ESM; Further Pretrained on PDB
+--- trained_models
+    --- DL
+        --- CNN.pkl
+        --- Transformer.pkl
+        --- GCN.pkl
+        --- MPNN.pkl
+    --- ML
+        --- GBM_2FP_11Des_1441IF.pkl
+        --- RF_2FP_11Des_1441IF.pkl
+        --- SVM_2FP_11Des_1441IF.pkl
+    --- FEAOF
+        --- 0FC_FEAOF.pkl
+        --- 1FC_FEAOF.pkl
+        --- 3FC_FEAOF.pkl
+        --- 5FC_FEAOF.pkl
+        --- Protein_0FC_FEAOF.pkl
+        --- Protein_3FC_FEAOF.pkl
 ```
 
-### Use pretrained pepharmony model to extract peptide representation
+### Model Performance
+
+![Performance](./docs/Performance.png)
 
 ```bash
 python inference_sscp.py
