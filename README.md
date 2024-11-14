@@ -28,7 +28,7 @@ Overall architecture of the proposed FEAOF. It comprises two components: Feature
 ```
 ### All Features Data
 
-download the Data from: 。。。 and put it in the following path:
+download the Data from:[Google Drive](https://drive.google.com/file/d/1vNyzwNYav4-BiDR-CxW4PrFIjaNRIJPY/view?usp=drive_link) and put it in the following path:
 
 ```
 ---data
@@ -52,7 +52,7 @@ download the Data from: 。。。 and put it in the following path:
 
 ### Trained Models
 
-- download the cpkts in the following link: [Zenodo](。。。)
+- download the cpkts in the following link: [Google Drive](https://drive.google.com/file/d/1vNyzwNYav4-BiDR-CxW4PrFIjaNRIJPY/view?usp=drive_link)
 - unzip the cpkts to the following path:
 ```
 --- trained_models
