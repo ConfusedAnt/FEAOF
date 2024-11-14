@@ -52,7 +52,7 @@ download the Data from:[Google Drive](https://drive.google.com/file/d/1vNyzwNYav
 
 ### Trained Models
 
-- download the cpkts in the following link: [Google Drive](https://drive.google.com/file/d/1vNyzwNYav4-BiDR-CxW4PrFIjaNRIJPY/view?usp=drive_link)
+- download the cpkts in the following link: [Google Drive](https://drive.google.com/file/d/1qWF9zhevi33jVZwWYAG1djefvxiZvm5M/view?usp=drive_link)
 - unzip the cpkts to the following path:
 ```
 --- trained_models
