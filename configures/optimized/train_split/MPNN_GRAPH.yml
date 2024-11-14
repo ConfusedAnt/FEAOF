@@ -1,0 +1,10 @@
+# Standard hyperparameters for Message Passing Neural Network
+epochs: 300
+node_hidden: 512
+edge_hidden: 512
+message_steps: 5
+dropout: 0.4
+transformer_hidden: 512
+fc_hidden: 256
+n_fc_layers: 5
+lr: 5.0e-06
