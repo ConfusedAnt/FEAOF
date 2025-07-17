@@ -19,6 +19,8 @@ Overall architecture of the proposed FEAOF. It comprises two components: Feature
   # Wash Smiles
     ---- herg_raw_0528.csv
     ---- herg_raw_0528_clean.csv
+    ---- 1_eval_set_herg_60_ini.csv
+    ---- 1_eval_set_herg_70_ini.csv
 
   ---processed
   # Split Datasets
@@ -37,17 +39,23 @@ download the Data from:[Google Drive](https://drive.google.com/file/d/1vNyzwNYav
     ---- Docking_IF_1.csv
     ---- Docking_IF_2.csv
     ---- Docking_IF_3.csv
+    ---- 2_eval_set_60_interaction.csv
+    ---- 2_eval_set_70_interaction.csv
+
+    # Select Interaction Fingerprint
+    ---- Train_Val_IF.csv
+    ---- Test_1_IF.csv
+    ---- Test_2_IF.csv
+    ---- 5_eval_set_60_IF_filter.csv
+    ---- 5_eval_set_70_IF_filter.csv
 
     # Merge All Features
     ---- Train_All_Features.pkl
     ---- Val_All_Features.pkl
     ---- Test_1_All_Features.pkl
     ---- Test_2_All_Features.pkl
-
-    # Select Interaction Fingerprint
-    ---- Train_Val_IF.csv
-    ---- Test_1_IF.csv
-    ---- Test_2_IF.csv
+    ---- Set60_All_Features_modified.pkl
+    ---- Set70_All_Features_modified.pkl
 ```
 
 ### Trained Models
@@ -79,6 +87,9 @@ download the Data from:[Google Drive](https://drive.google.com/file/d/1vNyzwNYav
 python Train_FEAOF.py
 python Train_DL.py
 Train_Eval_ML.ipynb
+Eval_FEAOF.ipynb
+Eval_DL.ipynb
+Eval_FEAOF_valu_set_github.ipynb
 ```
 
 ### Model Performance
